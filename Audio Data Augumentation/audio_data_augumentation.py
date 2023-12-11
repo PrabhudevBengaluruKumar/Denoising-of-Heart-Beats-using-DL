@@ -62,5 +62,5 @@ desired_snr_db = 5
 # Combine all types of noise
 noisy_pcg_all_noises = signal + \
     add_environmental_noise(signal, desired_snr_db) + \
-    add_artifact_noise(np.zeros_like(signal), 5) +\
-    add_respiratory_noise(np.zeros_like(signal), 5, sr)
+    add_artifact_noise(np.zeros_like(signal), desired_snr_db) +\
+    add_respiratory_noise(np.zeros_like(signal), desired_snr_db, sr)
