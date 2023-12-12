@@ -10,6 +10,9 @@ In the "Audio Data Augmentation" folder, the process of generating and adding no
 ## Literature Survey
 In this folder, brief information about literature survey performed is shown.
 
+## Metrics
+Metrics used to evaluate the performance of the model is discussed in this folder
+
 ## Projects
 This section updates on the workflow and status of the ongoing work.
 
