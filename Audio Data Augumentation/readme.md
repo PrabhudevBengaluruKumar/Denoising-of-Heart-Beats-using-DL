@@ -83,3 +83,24 @@ The power of the signal is computed as the mean of the squared signal values, wh
 - The artificial noise (base noise plus spikes) is added to the original signal, resulting in a signal that now contains synthesized artifact noise.
 ### Clip the Noisy Signal
 - The resulting noisy signal is clipped to ensure that its values remain within the range of -1.0 to 1.0. This is crucial for maintaining the integrity of the signal and preventing distortion, particularly important in audio processing.
+## 3. Respiratory noise
+This function mimics the respiratory noise. At first, a time array i created. The "time array" refers to an array where each element represents a specific point in time corresponding to each sample in the audio signal. Using this time array, an sinosudial wave is generated with 0.2 Hz (0.2 is selected to produce 12 breaths per minute 0.2 x 60 sec = 12 breath). The sinusoidal model is a simplified but effective way to mimic the periodic nature of breathing.
+
+### 1. Calculate Signal Power
+- The power of the input signal is computed as the average of the squared values of the signal (`np.mean(signal ** 2)`).
+### 2. Calculate Required Noise Power for Desired SNR
+- SNR is converted from decibels to a linear scale (`10 ** (desired_snr_db / 10)`).
+- The noise power needed to achieve this SNR is then determined by dividing the signal power by the linear SNR.
+### 3. Create Time Array
+- A time array corresponding to each sample in the signal is generated (`np.arange(len(signal)) / sampling_rate`).
+### 4. Generate Respiratory Noise
+- Respiratory noise is simulated as a sinusoidal wave at a frequency of 0.2 Hz (`np.sin(2 * np.pi * 0.2 * time)`), mimicking a normal adult respiratory rate at rest.
+### 5. Scale Respiratory Noise
+- The respiratory noise is scaled to match the calculated noise power. This normalization ensures that the noise has the same power as the required noise power.
+### 6. Add Respiratory Noise to Signal
+- The scaled respiratory noise is added to the original signal, resulting in a noisy signal.
+### 7. Clip Noisy Signal
+- The noisy signal is clipped to ensure that its values remain within the -1.0 to 1.0 range (`np.clip(noisy_signal, -1.0, 1.0)`). This step is crucial to prevent signal clipping or distortion.
+### 8. Return Noisy Signal
+- The function returns the signal with the added respiratory noise.
+
