@@ -7,6 +7,9 @@ Proposal of the thesis can be found in the home page of the repo.
 ## Audio Data Augmentation
 In the "Audio Data Augmentation" folder, the process of generating and adding noise to the dataset is explained in detail. A brief explanation is also available at this link: [Audio Data Augmentation](https://colab.research.google.com/drive/1zMEtEADFG4QIp2JfXAvHPjUVydHzipc0?usp=sharing).
 
+## Literature Survey
+In this folder, brief information about literature survey performed is shown.
+
 ## Projects
 This section updates on the workflow and status of the ongoing work.
 
