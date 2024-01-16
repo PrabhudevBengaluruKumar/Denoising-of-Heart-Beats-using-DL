@@ -18,6 +18,9 @@ This script is designed to simulate various types of noise in a heartbeat audio 
 - Simulates respiratory noise as a sinusoidal wave.
 - The frequency of the wave is set to simulate a typical respiratory cycle (0.2 Hz).
 - `sampling_rate`: The sampling rate of the audio signal.
+### add_electronic_interference(signal, desired_snr_db, sampling_rate, interference_freq)
+
+### add_cable_movement_noise(signal, desired_snr_db, disturbance_frequency, disturbance_duration, sampling_rate)
 
 ## Usage
 1. **Load the Audio File**
