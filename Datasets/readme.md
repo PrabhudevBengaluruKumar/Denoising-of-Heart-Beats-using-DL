@@ -26,3 +26,33 @@
 ### Two noise-free datasets :
 1. OAHS
 2. Dog heart beat (not all but selected samples)
+
+
+
+## Contents
+1. Introduction
+2. Background (about denoising in different applications)
+3. State of the art
+4. Methodology
+   
+   4.1 Workflow diagram
+   
+   4.2 LUnet method and Training
+   
+   4.3 Metrics
+6. Datasets
+7. Noise present in Heartbeat sound
+   
+   6.1 Different noises present in heartbeat audio
+   
+   6.2 Artificial noise creation and addition to the audio
+8. Experimentation and Evaluation
+   
+     7.1 Denoising on Human dataset
+   
+     7.2 Tranfer to Dog heartbeat dataset
+   
+     7.3 Comparison with traditional denoising method - Variational mode decomposition (VMD)
+   
+     7.4 Evaluation summary
+9. Conclusion 
