@@ -18,3 +18,7 @@ This section updates on the workflow and status of the ongoing work.
 
 ## Wiki
 The Wiki contains a page titled "Meetings," where discussions from each meeting are noted. This helps in tracking the project's progress and maintaining a record of decision-making processes.
+
+
+## Reference
+The model used during this thesis work is LU-Net from https://github.com/ShamsNafisaAli/LU-Net-Heart-Sound-Denoising-
