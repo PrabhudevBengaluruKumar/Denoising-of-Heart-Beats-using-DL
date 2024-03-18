@@ -21,4 +21,4 @@ The Wiki contains a page titled "Meetings," where discussions from each meeting 
 
 
 ## Reference
-The model used during this thesis work is LU-Net from https://github.com/ShamsNafisaAli/LU-Net-Heart-Sound-Denoising-
+The model, five datasets and training code used during this thesis work is LU-Net from https://github.com/ShamsNafisaAli/LU-Net-Heart-Sound-Denoising-
