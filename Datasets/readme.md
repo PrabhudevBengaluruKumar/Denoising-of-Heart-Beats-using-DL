@@ -11,6 +11,7 @@
 
 ### Dataset Download link
 https://drive.google.com/drive/folders/1taaX27AvcZrcuKHOgonJHFyOtrkua9lE?usp=sharing
+(credits - https://github.com/ShamsNafisaAli/LU-Net-Heart-Sound-Denoising-/tree/main)
 
 
 ### First model trained on :
